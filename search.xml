@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2019/12/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h4 id="今天我的博客系统终于上线了，第一篇文章讲讲建站过程叭"><a href="#今天我的博客系统终于上线了，第一篇文章讲讲建站过程叭" class="headerlink" title="今天我的博客系统终于上线了，第一篇文章讲讲建站过程叭"></a>今天我的博客系统终于上线了，第一篇文章讲讲建站过程叭</h4><ol>
+<li>连接github，此步见git篇</li>
+<li>安装nodejs，此步见nodejs篇</li>
+<li>创建 Github Pages 仓库<br>● GitHub 主页右上角加号 -&gt; New repository：<br>● Repository name 中输入 用户名.github.io<br>● 勾选 “Initialize this repository with a README”<br>● Description 选填<br>● 填好后点击 Create repository 创建。<a id="more"></a></li>
+<li>本地安装 Hexo 博客程序<pre><code>新建一个文件夹用来存放 Hexo 的程序文件，如 Hexo-Blog。打开该文件夹，右键 -&gt; Git  </code></pre>Bash Here。<br>4.1  安装 Hexo<pre><code>使用 npm 一键安装 Hexo 博客程序：
+ npm install -g hexo-cli
+4.2  Hexo 初始化和本地预览</code></pre>初始化并安装所需组件：<br>hexo init      # 初始化<br>npm install    # 安装组件<br>完成后依次输入下面命令，启动本地服务器进行预览：<br>hexo g   # 生成页面<br>hexo s   # 启动预览<pre><code>访问 http://localhost:4000，出现 Hexo 默认页面，本地博客安装成功！</code></pre></li>
+<li>部署 Hexo 到 GitHub Pages<pre><code> npm install hexo-deployer-git --save
+然后修改 _config.yml 文件末尾的 Deployment 部分，修改成如下：</code></pre>deploy:<br>type: git<br>repository: <a href="mailto:git@github.com">git@github.com</a>:用户名/用户名.github.io.git<br>branch: master<br>完成后运行 hexo d 将网站上传部署到 GitHub Pages。<br>完成！这时访问我们的 GitHub 域名 https://用户名.github.io 就可以看到 Hexo 网站了。</li>
+<li>域名绑定<pre><code>6.1  不绑定域名肯定也可以，就用默认的 qinzp123.github.io 来访问。若绑定域名，需要域名             
+解析，由于不带www方式只能采用A记录，所以两种解析结果如图（ip 是F12  
+ https://qinzp123.github.io/查到的，需要ping一下来验证）</code></pre></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java建站</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>技术</tag>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/12/27/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
